@@ -1,0 +1,426 @@
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #333;
+line-height: 1.6;
+margin: 0 auto;
+}
+
+*,
+*:before,
+*:after{
+box-sizing: border-box;    
+}
+
+/* container*/
+.container{
+width:100%;
+max-width: 1140px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+/* header*/
+header{
+width: 100%;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 1000;
+padding-top: 30px;
+}
+
+.header-inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-logo{
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+font-size: 20px;
+color:#fff;
+}
+
+/* nav */
+.nav-link{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+padding-right: 30px;
+transition: color 0.1s linear; 
+}
+
+.nav-link:hover{
+color: #d4d8e4;
+}
+
+.phone-nummer{
+color: #fff;
+}
+
+/* intro*/
+.intro{
+width:100%;
+height: 100vh;
+background: url("../image/block1/background.png") no-repeat center;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.intro-inner{
+max-width: 100%;
+width: 630px;
+margin: 0 auto;
+text-align: center;
+}
+
+.intro-title{
+font-family: 'Montserrat', sans-serif;
+line-height: 1.3;
+font-size: 50px;
+padding-bottom: 30px;
+color: #fff;
+}
+
+.intro-text{
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+padding: 0 80px;
+color: #fff;
+}
+
+.intro-btn{
+font-family: 'Montserrat', sans-serif;
+display: inline-block;
+font-size: 14px;
+color:#fff;
+text-decoration: none;
+padding: 15px 40px;
+background-color: #1a0c47;
+margin-top: 60px;
+transition: background-color 0.2s linear;
+}
+
+.intro-btn:hover{
+background-color: #321590;
+}
+
+/*block about us*/
+.block-about{
+margin-top: 100px;
+}
+
+.about-inner{
+display: flex;
+flex-wrap: nowrap;
+}
+
+.about-image{
+width: 48%;
+margin: 0;
+}
+.about-content{
+width: 39%;
+margin-top: 85px;
+margin-left: 20px;
+}
+
+.about-title{
+font-family: 'Montserrat', sans-serif;
+color: #333;
+font-size: 40px;
+}
+
+.about-text{
+color: #333;
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+margin-top: 35px;
+}
+
+.about-btn{
+font-family: 'Montserrat', sans-serif;
+display: inline-block;
+font-size: 14px;
+color:#fff;
+text-decoration: none;
+padding: 15px 40px;
+background-color: #1a0c47;
+margin-top: 65px;
+transition: background-color 0.2s linear;
+}
+
+.about-btn:hover{
+background-color: #321590;
+}
+
+/*work*/
+.work{
+background-color: #f6f6f6;
+margin-top:100px;
+padding-bottom: 120px;
+}
+
+.work-header{
+margin: 0 auto;
+text-align: center;
+}
+    
+.work-header-title{
+padding-top: 85px;
+font-size: 40px;
+color: #333;
+}
+
+.work-header-text{
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+color: #000;
+}
+
+.work-item{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 100px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.work-item-background{
+display: block;
+width: 255px;
+height: 258px;
+background-color: #1a0c47;
+position: relative;
+}
+
+.work-item-background--black{
+display: block;
+width: 255px;
+height: 258px;
+position: relative;
+background-color: #171717;
+}
+
+.work-item-icon{
+position: absolute;
+top: 30%;
+left: 42%;
+}
+
+.work-item-text{
+position: absolute;
+top: 65%;
+left: 42%;
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+}
+
+.work-item-text--measure{
+position: absolute;
+top: 65%;
+left: 35%;
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+}
+
+/*our work*/
+.work-title {
+text-align: center;
+font-size: 40px;
+margin-top: 105px;
+margin-bottom: 60px;
+}
+
+.our-works-photo{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding-bottom: 75px;
+}
+
+.work-our-image{
+margin: 15px 0;
+}
+
+.work-our-image--margin{
+margin: 15px 30px 15px auto;
+}
+
+
+
+/*reviev*/
+.reviev{
+background: url("../image/reviev/Reviews-bg.png") no-repeat center;
+background-size: cover;
+padding-bottom: 85px;
+}
+
+.reviev-title{
+font-size: 40px;
+color: #fff;
+padding-top: 95px;
+
+}
+
+.reviev-content{
+display: flex;
+justify-content: space-between;
+flex-wrap: nowrap;
+}
+
+.reviev-item{
+width: 39%;
+margin: 0;
+}
+
+.reviev-icon{
+margin-top: 85px;
+margin-bottom: 40px
+}
+
+.reviev-text{
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+color: #a7a7a7;
+margin-top: 35px;
+margin-bottom: 40px;
+}
+
+.reviev-write{
+margin-bottom: 40px;
+}
+
+.reviev-name{
+font-size: 18px;
+margin-bottom: 20px;
+color: #fff;
+}
+
+.reviev-profecion{
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+color: #a7a7a7; 
+}
+
+/*client*/
+
+.clients{
+background-color: #f6f6f6;
+padding-bottom: 130px;
+}
+
+.client-title{
+font-size: 50px;
+color: #333;
+padding-top: 100px;
+margin-bottom: 90px;
+text-align: center;
+}
+
+.client-content{
+display: flex;
+justify-content: space-between;
+}
+
+.client-content--margin{
+display: flex;
+justify-content: space-between;
+margin-top: 70px;
+}
+
+.client-photo{
+width: 255px;
+height: 110px;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.client-image{
+filter: grayscale(1);
+opacity: 0.3;
+}
+
+/*contact*/
+
+.contacts{
+background:
+url(../image/contact/Contacts-bg.png) no-repeat center;
+background-size: cover;
+padding-top: 80px;
+padding-bottom: 90px;
+}
+
+.contact-title{
+font-size: 50px;
+color: #fff;
+padding-bottom: 30px;
+}
+
+
+.contact-mesedge{
+width: 48.6%;
+background-color: rgba(33, 33, 33, 0.7);
+padding: 40px 30px;
+}
+
+.mesedge-title{
+font-size: 24px;
+color: #ffffff;
+padding-bottom: 30px;
+}
+
+.field{
+width: 100%;
+border: 1px solid #a7a7a7;
+background-color: inherit;
+padding:15px 20px; 
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+margin-bottom: 30px;
+color: #fff;
+}
+
+.field-text{
+width: 100%;
+border: 1px solid #a7a7a7;
+background-color: inherit;
+padding:15px 20px; 
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+margin-bottom: 30px;
+color: #fff;
+}
+
+.mesedge--field{
+width: 100%;
+border: 1px solid #a7a7a7;
+background-color: inherit;
+padding:15px 20px; 
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+margin-bottom: 30px;
+color: #9e9e9e;
+}
+
+.mesedge-btn{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+padding: 15px 80px;
+background-color: #1a0c47;
+cursor: pointer;
+border: 0;
+}
+
