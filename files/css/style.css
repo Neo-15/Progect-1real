@@ -44,6 +44,15 @@ font-size: 20px;
 color:#fff;
 }
 
+.header-logo--footer{
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+font-size: 20px;
+color:#1a0c47;
+margin-right: 150px;
+}
+
+
 /* nav */
 .nav-link{
 font-family: 'Montserrat', sans-serif;
@@ -54,8 +63,22 @@ padding-right: 30px;
 transition: color 0.1s linear; 
 }
 
+.nav-link--footer{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #5a5a5a;
+text-decoration: none;
+padding-right: 30px;
+transition: color 0.1s linear; 
+}
+
+
 .nav-link:hover{
 color: #d4d8e4;
+}
+
+.nav-link--footer:hover{
+color: #000;
 }
 
 .phone-nummer{
@@ -368,10 +391,14 @@ color: #fff;
 padding-bottom: 30px;
 }
 
+.contact-content{
+display: flex;
+justify-content: space-between;
+}
 
 .contact-mesedge{
 width: 48.6%;
-background-color: rgba(33, 33, 33, 0.7);
+background-color: rgba(33, 33, 33, 0.5);
 padding: 40px 30px;
 }
 
@@ -423,4 +450,75 @@ background-color: #1a0c47;
 cursor: pointer;
 border: 0;
 }
+
+.contact-info{
+width: 48.6%;
+}
+
+.contact-inform{
+width: 100%;
+background-color: rgba(33, 33, 33, 0.5);
+padding: 40px 30px;
+}
+
+.inform-title{
+font-size: 24px;
+color: #fff;
+padding-bottom: 15px;
+}
+
+.inform-text{
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+color: #b0b0b0;
+line-height: 2;
+}
+
+/*footer*/
+.footer{
+padding: 50px 0;
+background-color: #f6f6f6;
+}
+
+.footer-icon {
+color: #9e98b0;
+margin-right: 10px;
+font-size: 16px;
+}
+
+.footer-icon--gray{
+color: #bdbdbd;
+margin-right: 10px;
+font-size: 16px;
+}
+
+.footer-copiright{
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+color: #171717;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
