@@ -14,11 +14,11 @@ box-sizing: border-box;
 
 /* container*/
 .container{
+display: block;
 width:100%;
 max-width: 1140px;
 margin: 0 auto;
-padding-left: 15px;
-padding-right: 15px;
+padding: 0 15px;
 }
 
 /* header*/
@@ -37,6 +37,13 @@ justify-content: space-between;
 align-items: center;
 }
 
+.header-inner--footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
 .header-logo{
 font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;
@@ -48,7 +55,7 @@ color:#fff;
 font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;
 font-size: 20px;
-color:#1a0c47;
+color:#333;
 margin-right: 150px;
 }
 
@@ -84,6 +91,58 @@ color: #000;
 .phone-nummer{
 color: #fff;
 }
+
+.nav-border{
+position: relative;
+padding: 20px;
+border: 2px solid #5c5a78;
+left: -40px;
+display: none;    
+}
+
+.nav-togle{
+width: 20px; 
+padding: 4px 0;
+position: absolute;
+top: 15px;
+right: 10px;
+z-index: 1;
+display: none;
+}
+
+.nav-togle-item:before,
+.nav-togle-item:after{
+content: "";
+width: 100%;
+height: 3px;
+background-color: #fff;
+position: absolute;
+left: 0;
+z-index: 1;
+}
+
+.nav-togle-item:before{
+top: -8px;
+}
+
+.nav-togle-item:after{
+bottom: -8px;
+}
+
+
+.nav-togle-item{
+display: block;
+width: 100%;
+height: 3px;
+background-color: #fff;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
 
 /* intro*/
 .intro{
@@ -139,19 +198,28 @@ background-color: #321590;
 margin-top: 100px;
 }
 
-.about-inner{
+.about-inner{  
 display: flex;
 flex-wrap: nowrap;
+justify-content: space-around;
 }
 
 .about-image{
-width: 48%;
-margin: 0;
+width: 100%;
+margin-right: 40px;
 }
+
+.about-photo{
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+
+
 .about-content{
-width: 39%;
+width: 100%;
 margin-top: 85px;
-margin-left: 20px;
 }
 
 .about-title{
@@ -161,6 +229,7 @@ font-size: 40px;
 }
 
 .about-text{
+width: 80%;
 color: #333;
 font-size: 16px;
 font-family: 'Lato', sans-serif;
@@ -170,7 +239,7 @@ margin-top: 35px;
 .about-btn{
 font-family: 'Montserrat', sans-serif;
 display: inline-block;
-font-size: 14px;
+font-size: 16px;
 color:#fff;
 text-decoration: none;
 padding: 15px 40px;
@@ -210,24 +279,36 @@ color: #000;
 .work-item{
 display: flex;
 justify-content: space-between;
-flex-wrap: wrap;
 margin-top: 100px;
 margin-left: 20px;
 margin-right: 20px;
 }
 
+.work-content{
+width: 48%;
+height: 255px;
+margin-right: 15px;
+}
+
+ .work-reverse{
+width: 100%;
+height: 255px;
+display: flex;
+justify-content: space-between;
+}
+
 .work-item-background{
 display: block;
-width: 255px;
-height: 258px;
+max-width:100%;
+height: 100%;
 background-color: #1a0c47;
 position: relative;
 }
 
 .work-item-background--black{
 display: block;
-width: 255px;
-height: 258px;
+max-width: 100%;
+height: 100%;
 position: relative;
 background-color: #171717;
 }
@@ -271,12 +352,12 @@ flex-wrap: wrap;
 padding-bottom: 75px;
 }
 
-.work-our-image{
-margin: 15px 0;
-}
 
-.work-our-image--margin{
-margin: 15px 30px 15px auto;
+.work-our-image{
+display: block;
+max-width:50%;
+height: 50%;
+margin-bottom: 30px;
 }
 
 
@@ -362,15 +443,19 @@ margin-top: 70px;
 }
 
 .client-photo{
-width: 255px;
+width: 25%;
 height: 110px;
 background-color: #fff;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-right: 20px;
 }
 
 .client-image{
+display: block;
+max-width: 100%;
+height: auto;
 filter: grayscale(1);
 opacity: 0.3;
 }
@@ -459,6 +544,13 @@ width: 48.6%;
 width: 100%;
 background-color: rgba(33, 33, 33, 0.5);
 padding: 40px 30px;
+margin-bottom: 30px;
+}
+
+.contact-inform-nomargin{
+width: 100%;
+background-color: rgba(33, 33, 33, 0.5);
+padding: 40px 30px;
 }
 
 .inform-title{
@@ -498,11 +590,364 @@ font-size: 16px;
 color: #171717;
 }
 
+/*amedia*/
+@media ( max-width:1024px){
+    
+    .container{
+    padding: 0;
+    max-width: 920px;
+    }
 
+    .nav-link{
+    display: none;
+    padding: 0;
+    }
+    
+    .nav-border{
+    display: block;
+    left: 0;
+    }
 
+    .nav-togle{
+    display: block;
 
+    }
+    
+    .phone-nummer{
+    margin-left: 400px;
+    }
+    
+    .about-title{
+    font-size: 30px;
+    }
+    
+    .about-text{
+    font-size: 14px;
+    width: 85%;
+    }
+    
+    .about-btn{
+    margin-top: 30px;
+    }
+    
+    .work-item{
+    margin: 100px 0 0 0;
+    }
+    
 
+    .work-header-title{
+    font-size: 30px;
+    }
+    
+    .work-header-text{
+    font-size: 14px;
+    }
+    
+    .work-content{
+    height: 211px;
+    width: 50%;
+    margin: 15px;    
+    }
+    
+     .work-reverse{
+      width: 100%;
+       height: 211px;
+       display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .work-title{
+    font-size: 30px;
+    }
+    .work-our-image{
+    width: 48%;
+    height: 45%;
+    }
+    
+    .reviev-title{
+    display: none;
+    }
 
+    .reviev-text{
+    font-size: 14px;
+    }
+    
+    .clients{
+    padding-bottom: 80px;
+    }
+    
+    .client-title{
+    padding-top: 70px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    }
+    
+    .client-content--margin{
+    margin-top: 60px;
+    }
+    
+    .client-photo{
+    height: 90px;
+    }
+    
+    .contact-title{
+    font-size: 30px;
+    }
+    
+    .mesedge-title{
+    font-size: 20px;
+    }
+    
+    .inform-title{
+    font-size: 20px;
+    }
+    
+    .inform-text{
+    font-size: 14px;
+    }
+    
+    .header-logo--footer{
+    margin-right: 50px;
+    }
+}
+
+@media ( max-width:320px){
+
+    .header-inner{
+    flex-wrap: wrap;
+    }
+    
+    .header-logo{
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    
+    .phone-nummer{
+    margin: 0;
+    }
+    
+    .header{
+    padding: 0 15px;    
+    }
+    
+    .intro{
+    padding: 0 15px;    
+    }
+    
+    
+    .intro-title{
+    font-size: 30px;
+    padding-bottom: 40px;
+    }
+    
+    .intro-text{
+    font-size: 14px;
+    padding: 0;
+    }
+    
+    .block-about{
+    margin: 0;
+    }
+    
+    .about-inner{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    }
+    
+    .about-image{
+    margin: 0;
+    display: 
+    }
+    
+    .about-content{
+    margin-top: 50px;
+    padding: 0 15px;
+    text-align: center;
+    }
+    
+    .about-title{
+    font-size: 24px;
+    }
+    
+    .about-text{
+    width: 100%;
+    margin-top: 10px;
+    }
+    
+    .about-btn{
+    margin: 50px 0;    
+    }
+    
+    .work{
+    margin-top: 0;
+    padding: 0 15px 50px 15px;
+    }
+    
+    .work-header-title{
+    margin: 0;
+    padding-top: 60px;
+    font-size: 24px;
+    padding: 60px 20px 30px 20px;
+    line-height: 1.3;
+    }
+    
+    .work-item{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    }
+    
+    .work-content{
+    height: 133px;
+    width: 46%;
+    margin: 0;
+    }
+    
+    .work-reverse{
+    width: 100%;
+    height: 133px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:-nowrap;
+    flex-direction:row-reverse;
+    margin-top: 20px;
+    }
+    
+    .work-item-icon{
+    left: 38%;
+    }
+    
+    .work-item-text{
+    left: 38%;
+    }
+    
+    .work-item-text--measure{
+    left: 23%;
+    }
+    
+    .work-title{
+    margin: 60px 0 50px 0;
+    }
+    
+    .our-work-photo{
+    padding-bottom: 60px;
+    }
+   
+    .work-our-image{
+    max-width: 100%;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+    }
+    
+    .clients{
+    padding: 0 15px;
+    }
+    
+    .client-title{
+    margin-bottom: 40px;
+    font-size: 24px;
+    }
+    
+    .client-content{
+    flex-wrap: wrap;
+
+    }
+    
+    .client-content--margin{
+        flex-wrap: wrap;
+       margin-top: 0;
+        padding-bottom: 50px;
+    }
+    
+    .client-photo{
+    width: 47%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    }
+    
+    .contacts{
+    padding: 0 15px;
+    }
+    
+    .contact-title{
+    padding-top: 50px;
+    font-size: 24px;
+    }
+    
+    .contact-content{
+    flex-wrap: wrap;
+    }
+    
+    .contact-mesedge{
+    width: 100%;
+    }
+    
+    .mesedge-title{
+    font-size: 16px;
+    }
+    
+    .field{
+    margin-bottom: 20px;
+    }
+    
+     .contact-info{
+    width: 100%;
+    margin-top: 40px;
+    }
+    
+    .inform-title{
+    font-size: 16px;
+    }
+    
+    .inform-text{
+    font-size: 13px;
+    }
+    
+    .contact-inform-nomargin{
+    margin-bottom: 50px;
+    }
+    
+    .footer{
+    padding: 40px 15px;
+    }
+    
+    .header-inner--footer{
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+    .header-logo--footer{
+    margin-right: 0;
+    font-size: 16px;
+    }
+    
+    .nav{
+    display: flex;
+    flex-wrap: wrap;
+   text-align: center;
+    }
+    
+    .header-logo--footer{
+    margin-bottom: 30px;
+    }
+    
+    .nav-link--footer{
+    padding: 0;
+    width: 290px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    }
+    
+    .footer-copiright{
+    font-size: 14px;
+    text-align: center;
+    }
+    
 
 
 
