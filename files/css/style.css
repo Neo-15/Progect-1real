@@ -401,8 +401,8 @@ flex-wrap: nowrap;
 }
 
 .reviev-item{
-width: 39%;
-margin: 0;
+width: 30%;
+margin-right: 50px;
 }
 
 .reviev-icon{
@@ -433,6 +433,31 @@ font-family: 'Lato', sans-serif;
 font-size: 14px;
 color: #a7a7a7; 
 }
+
+.slick-dots {
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    list-style: none;
+	padding: 0;
+}
+
+.slick-dots button {
+    background: #403666; 
+    border: none; 
+    border-radius: 50%; 
+    height: 15px; 
+    width: 15px; 
+    margin: 5px; 
+    outline: none;
+	font-size: 0;
+	color: inherit;
+}
+
+.slick-dots li[class="slick-active"] button {
+    background: #fff;
+}
+
 
 /*client*/
 
@@ -890,7 +915,12 @@ background-color: #4b496c;
     height: 50%;
     margin-bottom: 20px;
     }
-    
+	
+	.reviev{
+	padding: 0 15px 85px 15px; 
+	}
+	
+	    
     .clients{
     padding: 0 15px;
     }

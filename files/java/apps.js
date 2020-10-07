@@ -40,7 +40,28 @@ event.preventDefault();
 	$("#header").toggleClass("active");
 	
 });
+
+/*slider*/
+	$("[data-slider]").slick({
+slidesToShow: 2,  
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 865,
+      settings: {
+       slidesToShow: 1,
+       slidesToScroll: 1,
+		arrows:false,
+		dots:true,
+		 fade:true,
+		 infinite:true,
+		 draggable:true,
+		 swipe:true
+     }
+    }
+  	]      
+
 	
 	
-	
+})	
 });
