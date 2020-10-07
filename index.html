@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1  ">
@@ -7,32 +8,33 @@
    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	
     <title>Real Estate</title>    
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="container">
     <div class="header-inner">
-    <div class="header-logo">sky realestate</div>
-    <nav class="nav">
-    <a class="nav-link" href="#">About us</a>
-    <a class="nav-link" href="#">Process</a>
-    <a class="nav-link" href="#">Our works</a>
-    <a class="nav-link" href="#"> Reviews</a>
-    <a class="nav-link" href="#">Clients</a>
-    <a class="nav-link" href="#">Contacts</a>
+    <div class="header-logo" data-scroll="#intro">sky realestate</div>
+    <nav class="nav" id="nav">
+    <a class="nav-link" href="#" data-scroll="#about">About us</a>
+    <a class="nav-link" href="#" data-scroll="#work">Process</a>
+    <a class="nav-link" href="#" data-scroll="#ourwork">Our works</a>
+    <a class="nav-link" href="#" data-scroll="#reviev"> Reviews</a>
+    <a class="nav-link" href="#" data-scroll="#client">Clients</a>
+    <a class="nav-link" href="#" data-scroll="#contacts">Contacts</a>
     </nav>
      <span class="phone-nummer">+38 (067) 900-99-22</span>
     <div class="nav-border">
-    <div class="nav-togle">
+    <button class="nav-togle" id="nav-togle" type="button">
     <span class="nav-togle-item"></span>
-    </div>
+    </button>
     </div>
     </div>
     </div>
     </header>
     
-    <div class="intro">
+    <div class="intro" id="intro">
     <div class="container">
     <div class="intro-inner">   
     <div class="intro-title">
@@ -45,7 +47,7 @@ amet consectet
     </div>
     </div>
     
-<div class="block-about">
+<div class="block-about" id="about">
 <div class="container"> 
 <div class="about-inner">
 <div class="about-image">
@@ -61,7 +63,7 @@ amet consectet
 </div>
 </div>
 
-<div class="work">
+<div class="work" id="work">
 <div class="container">
 <div class="work-header">
 <h1 class="work-header-title">Our Working Process</h1>
@@ -108,7 +110,7 @@ amet consectet
 </div>
 </div> 
 
-<div class="our-work">
+<div class="our-work" id="ourwork">
 <div class="container">
 <div class="work-title">Our works</div>
 <div class="our-works-photo">
@@ -121,7 +123,7 @@ amet consectet
 </div>
 </div> 
       
-<div class="reviev">
+<div class="reviev" id="reviev">
 <div class="container">
 <div class="reviev-title">Reviews</div>    
 <div class="reviev-content">
@@ -153,7 +155,7 @@ amet consectet
 </div>     
     
     
-<div class="clients">
+<div class="clients" id="client">
 <div class="container">
 <div class="client-title">Clients</div>
 <div class="client-content">
@@ -188,7 +190,7 @@ amet consectet
 </div>    
 </div>
  
-<div class="contacts">
+<div class="contacts" id="contacts">
 <div class="container">
 <div class="contact-title">Contacts</div>
 <div class="contact-content">
@@ -232,7 +234,7 @@ Block SE(A), Gulshan-1, Dhaka 1212.</div>
 <div class="container">
     <div class="header-inner--footer">
     <div class="header-logo--footer">sky realestate</div>
-    <nav class="nav">
+    <nav class="nav-footer">
     <a class="nav-link--footer" href="#">About us</a>
     <a class="nav-link--footer" href="#">Process</a>
     <a class="nav-link--footer" href="#">Our works</a>
@@ -254,6 +256,9 @@ Block SE(A), Gulshan-1, Dhaka 1212.</div>
 <div class="container">
 <div class="footer-copiright">Copyright © 2019. All rights reserved</div>
 </div>
-</footer>   
+</footer> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="files/java/apps.js"></script>
 </body>
 </html>
