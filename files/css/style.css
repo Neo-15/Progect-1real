@@ -434,6 +434,10 @@ font-size: 14px;
 color: #a7a7a7; 
 }
 
+.slick-slide {
+    outline: none
+}
+
 .slick-dots {
     text-align: center;
     display: flex; 
