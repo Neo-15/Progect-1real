@@ -33,7 +33,7 @@ scrollTop: blockOffset
 });
 	
 /* menu nav togle */
-$("#nav-togle").on("click", function(event){
+$("#nav-togle ").on("click", function(event){
 event.preventDefault();
 
 	$("#nav").toggleClass("active");
@@ -47,7 +47,7 @@ slidesToShow: 2,
   slidesToScroll: 2,
   responsive: [
     {
-      breakpoint: 865,
+      breakpoint: 500,
       settings: {
        slidesToShow: 1,
        slidesToScroll: 1,
@@ -59,9 +59,14 @@ slidesToShow: 2,
 		 swipe:true
      }
     }
-  	]      
+  	]     
 
 	
 	
 })	
 });
+
+$('.intro, .block-about, .work, .our-work, .reviev, .clients, .contacts, .footer, footer').click(function() {
+    $('.nav').removeClass('active');
+	$("#header").removeClass("active");
+  });

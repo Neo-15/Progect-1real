@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="files/css/style.css" >
-   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	
     <title>Real Estate</title>    
 </head>
 <body>
@@ -25,13 +23,13 @@
     <a class="nav-link" href="#" data-scroll="#client">Clients</a>
     <a class="nav-link" href="#" data-scroll="#contacts">Contacts</a>
     </nav>
-     <span class="phone-nummer">+38 (067) 900-99-22</span>
-    <div class="nav-border">
+     <span><a class="phone-nummer" href="tel:+380679009922" >+38 (067) 900-99-22</a></span>
+    </div>
+	 <div class="nav-border">
     <button class="nav-togle" id="nav-togle" type="button">
     <span class="nav-togle-item"></span>
     </button>
-    </div>
-    </div>
+    </div>	
     </div>
     </header>
     
@@ -72,6 +70,7 @@ amet consectet
 </div>
 
 <div class="work-item">
+<div class="work-content-head">
 <div class="work-content">
 <div class="work-item-background">
 <div class="work-item-icon">
@@ -89,8 +88,10 @@ amet consectet
 <div class="work-item-text--measure">measure</div>
 </div>
 </div>
+</div>
+	
 <div class="work-reverse">
-<div class="work-content">
+<div class="work-content-reverse">
 <div class="work-item-background">
 <div class="work-item-icon">
 <img src="files/image/work/file-list-3-line.png" alt="#">    
@@ -98,7 +99,7 @@ amet consectet
 <div class="work-item-text">plan</div>
 </div>
 </div>
-<div class="work-content">
+<div class="work-content-reverse">
 <div class="work-item-background--black">
 <div class="work-item-icon">
 <img src="files/image/work/building-line.png" alt="#">    
@@ -115,11 +116,15 @@ amet consectet
 <div class="container">
 <div class="work-title">Our works</div>
 <div class="our-works-photo">
-<img class="work-our-image" src="files/image/our-works/Sky-Realestate_03.png" alt="#">
+<div class="work-our-block">
+<img class="work-our-image--right" src="files/image/our-works/Sky-Realestate_03.png" alt="#">
 <img class="work-our-image" src="files/image/our-works/Sky-Realestate_05.png" alt="#">
-<img class="work-our-image"
+</div>
+<div class="work-our-block">
+<img class="work-our-image--right"
  src="files/image/our-works/Sky-Realestate_09.png" alt="#">
-<img class="work-our-image" src="files/image/our-works/Sky-Realestate_10.png" alt="#"> 
+<img class="work-our-image" src="files/image/our-works/Sky-Realestate_10.png" alt="#">
+</div>
 </div>
 </div>
 </div> 
@@ -203,7 +208,7 @@ amet consectet
 <input class="field" type="email" name="name" placeholder="Email*">
 <input class="field" type="text" name="name" placeholder="Phone*">
 <textarea class="mesedge--field" name="mesedge-field" rows="6">Message*</textarea> 
-<button class="mesedge-btn" type="submit">Send</button> 
+<input name="submit" class="mesedge-btn" type="submit" value="Send">
 </form>     
 </div>
 
@@ -223,7 +228,7 @@ Block SE(A), Gulshan-1, Dhaka 1212.</div>
 <div class="contact-inform-nomargin">
 <div class="inform-title">Web</div>
 <div class="inform-text">
-<div>E-mail: skyrealestate@gmail.com</div>
+<div><a class="inform-Email" href="mailto:skyrealestate@gmail.com">E-mail: skyrealestate@gmail.com</a></div>
 <div>Website: skyrealestate.com</div>
 </div>    
 </div>
@@ -245,10 +250,10 @@ Block SE(A), Gulshan-1, Dhaka 1212.</div>
     <a class="nav-link--footer" href="#" data-scroll="#contacts">Contacts</a>  
     </nav>
     <div>
-    <a class="footer-icon" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>      
-    <a class="footer-icon--gray" href="https://www.instagram.com/?hl=uk"><i class="fab fa-instagram-square"></i></a>  
-    <a class="footer-icon" href="https://twitter.com/?lang=uk"><i class="fab fa-twitter"></i></a>  
-    <a class="footer-icon--gray" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>    
+    <a class="footer-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>      
+    <a class="footer-icon--gray" href="https://www.instagram.com/?hl=uk" target="_blank"><i class="fab fa-instagram-square"></i></a>  
+    <a class="footer-icon" href="https://twitter.com/?lang=uk" target="_blank"><i class="fab fa-twitter"></i></a>  
+    <a class="footer-icon--gray" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>    
     </div>
     </div>   
     </div>

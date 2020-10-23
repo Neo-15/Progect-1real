@@ -1,3 +1,12 @@
+ @font-face {
+    font-family: 'Lato'; 
+	src: url('font/Lato-Regular.ttf'); 
+   }
+ @font-face {
+    font-family: 'Montserrat'; 
+    src: url('font/Montserrat-Bold.ttf'); 
+   }
+
 body {
 font-family: 'Montserrat', sans-serif;
 font-size: 14px;
@@ -71,7 +80,7 @@ font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;
 font-size: 20px;
 color:#333;
-margin-right: 150px;
+margin-right: 130px;
 }
 
 
@@ -83,7 +92,7 @@ font-size: 14px;
 color: #fff;
 text-decoration: none;
 padding-right: 30px;
-transition: color 0.1s linear; 
+transition: color 0.3s linear; 
 }
 
 .nav-link--footer{
@@ -92,12 +101,12 @@ font-size: 14px;
 color: #5a5a5a;
 text-decoration: none;
 padding-right: 30px;
-transition: color 0.1s linear; 
+transition: color 0.3s linear; 
 }
 
 
 .nav-link:hover{
-color: #d4d8e4;
+color: #9791a9;
 }
 
 .nav-link--footer:hover{
@@ -106,14 +115,24 @@ color: #000;
 
 .phone-nummer{
 color: #fff;
+text-decoration: none;
+transition: color 0.5s linear;
+}
+ .phone-nummer:hover{
+color: #9791a9;
+text-decoration: none;
 }
 
+
 .nav-border{
-position: relative;
-padding: 20px;
+position: absolute;
 border: 2px solid #5c5a78;
-left: -40px;
-display: none;    
+display: none;
+padding: 20px;
+width: 44px;
+height: 44px;
+top: 15px;
+right: 35px;
 }
 
 .nav-togle{
@@ -204,7 +223,7 @@ text-decoration: none;
 padding: 15px 40px;
 background-color: #1a0c47;
 margin-top: 60px;
-transition: background-color 0.2s linear;
+transition: background-color 0.4s linear;
 }
 
 .intro-btn:hover{
@@ -263,7 +282,7 @@ text-decoration: none;
 padding: 15px 40px;
 background-color: #1a0c47;
 margin-top: 65px;
-transition: background-color 0.2s linear;
+transition: background-color 0.4s linear;
 }
 
 .about-btn:hover{
@@ -297,23 +316,40 @@ color: #000;
 .work-item{
 display: flex;
 justify-content: space-between;
+height: 220px;
 margin-top: 100px;
 margin-left: 20px;
 margin-right: 20px;
 }
 
+.work-content-head{
+width: 50%;
+height: auto;
+display: flex;
+justify-content: space-between;
+}
+
 .work-content{
+display: block;
 width: 48%;
-height: 255px;
+height: auto;
 margin-right: 15px;
 }
 
  .work-reverse{
-width: 100%;
-height: 255px;
+width: 50%;
+height: auto;
 display: flex;
 justify-content: space-between;
 }
+
+.work-content-reverse{
+display: block;
+width: 48%;
+height:auto;
+margin-right: 15px;
+}
+
 
 .work-item-background{
 display: block;
@@ -364,20 +400,27 @@ margin-bottom: 60px;
 }
 
 .our-works-photo{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
 padding-bottom: 75px;
 }
 
+.work-our-block{
+display: flex;
+width: 100%;
+}
 
 .work-our-image{
 display: block;
-max-width:50%;
-height: 50%;
+max-width:48%;
+height: auto;
 margin-bottom: 30px;
 }
-
+.work-our-image--right{
+display: block;
+max-width:48%;
+height: auto;
+margin-bottom: 30px;
+margin-right: 30px;
+}
 
 
 /*reviev*/
@@ -403,6 +446,7 @@ flex-wrap: nowrap;
 .reviev-item{
 width: 30%;
 margin-right: 50px;
+padding-left: 30px;
 }
 
 .reviev-icon{
@@ -491,12 +535,13 @@ margin-top: 70px;
 
 .client-photo{
 width: 25%;
-height: 110px;
+height: 100px;
 background-color: #fff;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-right: 20px;
+margin-right: 10px;
+margin-left: 10px;
 }
 
 .client-image{
@@ -571,6 +616,7 @@ font-family: 'Lato', sans-serif;
 font-size: 14px;
 margin-bottom: 30px;
 color: #9e9e9e;
+resize: none;
 }
 
 .mesedge-btn{
@@ -581,7 +627,13 @@ padding: 15px 80px;
 background-color: #1a0c47;
 cursor: pointer;
 border: 0;
+transition: background-color 0.4s linear;
 }
+
+.mesedge-btn:hover{
+background-color: #30138d;
+}
+
 
 .contact-info{
 width: 48.6%;
@@ -612,6 +664,16 @@ font-size: 16px;
 color: #b0b0b0;
 line-height: 2;
 }
+ 
+.inform-Email{
+text-decoration: none;
+color: #b0b0b0;
+transition: color 0.4s linear;
+}
+
+.inform-Email:hover{
+color:#fff;
+}
 
 /*footer*/
 .footer{
@@ -623,12 +685,23 @@ background-color: #f6f6f6;
 color: #9e98b0;
 margin-right: 10px;
 font-size: 16px;
+transition: color 0.4s linear;
 }
+
+.footer-icon:hover{
+color: #4b496c;
+}
+
 
 .footer-icon--gray{
 color: #bdbdbd;
 margin-right: 10px;
 font-size: 16px;
+transition: color 0.4s linear;
+}
+
+.footer-icon--gray:hover{
+color: #5a5a5a;
 }
 
 .footer-copiright{
@@ -645,9 +718,17 @@ color: #171717;
     max-width: 920px;
     }
 	
+	.header-inner{
+padding-right: 100px;
+}
+	
 	.header.active{
 background-color: #4b496c;
 }
+	.header{
+	display: flex;
+	flex-wrap: nowrap;
+	}
 	
 	.nav{
 	display: none;
@@ -673,17 +754,14 @@ background-color: #4b496c;
     
     .nav-border{
     display: block;
-    left: 0;
-    }
+	}
 
     .nav-togle{
     display: block;
-
     }
+	
     
-    .phone-nummer{
-    margin-left: 400px;
-    }
+    
     
     .about-title{
     font-size: 30px;
@@ -710,28 +788,32 @@ background-color: #4b496c;
     .work-header-text{
     font-size: 14px;
     }
-    
-    .work-content{
-    height: 211px;
-    width: 50%;
-    margin: 15px;    
-    }
+	
+	
+	.work-item{
+	height: 250px;
+	}
+	
+	.work-content{
+	height: 80%;
+	}
+	
+	.work-content-reverse{
+	height: 80%;
+	}
+  
+	
     
      .work-reverse{
-      width: 100%;
-       height: 211px;
        display: flex;
-        justify-content: space-between;
+       justify-content: space-between;
     }
     
     
     .work-title{
     font-size: 30px;
     }
-    .work-our-image{
-    width: 48%;
-    height: 45%;
-    }
+    
     
     .reviev-title{
     display: none;
@@ -776,26 +858,492 @@ background-color: #4b496c;
     }
     
     .header-logo--footer{
-    margin-right: 50px;
+    margin-right: 20px;
     }
+	
+	.nav-link--footer{
+	padding-right: 25px;
+	}
 }
 
+@media ( max-width:870px){
+	.about-content{
+	margin-top: 25px;
+	}
+	.about-text{
+	margin-top: 0;
+	width: 95%;
+	}
+	
+	.about-btn{
+	padding: 15px 30px;
+	}
+	
+	.work-item{
+	margin-top: 50px;
+	}
+	
+	.work-content{
+	width: 48%;
+	height: 73%;
+	}
+	
+	.work-content-reverse{
+	width: 47%;
+	height: 73%;
+	}
+	
+	.work-item-text--measure{
+	left: 33%;
+	}
+	
+	.work{
+	margin-top: 50px;
+	padding-bottom: 0px;
+	}
+	
+	.client-title{
+	padding-top: 40px;
+	margin-bottom: 40px;
+	}
+	
+	.client-photo{
+	height: 80px;
+	padding-left: 8px;
+	padding-right: 8px;
+	}
+	
+	.header-logo--footer{
+	font-size: 18px;
+	margin-right: 12px;
+	}
+	
+	.nav-link--footer{
+	padding-right: 10px;
+	}
+	
+	.footer-icon{
+	font-size: 14px;
+	margin-right: 8px;
+	}
+	
+	}
+
+@media ( max-width:730px){
+	.block-about{
+	margin-top: 50px;
+	}
+	
+	.about-image{
+	margin-right: 20px;
+	}
+	
+    
+    .about-content{
+    margin-top: 15px;
+    }
+    
+    .about-title{
+    font-size: 24px;
+    }
+    
+    .about-text{
+    width: 100%;
+    margin-top: 10px;
+	font-size: 13px;
+    }
+    
+    .about-btn{
+    margin: 20px 0;
+	font-size: 13px;
+    }
+	
+	.work-content{
+	width: 48%;
+	height: 61%;
+	}
+	
+	.work-content-reverse{
+	width: 47%;
+	height: 61%;
+	}
+	
+	.work-item-icon img{
+	width: 35px;
+	height: 35px;
+	}
+	
+	.work-item-text{
+	font-size: 14px;
+	}
+	
+	.work-item-text--measure{
+	left: 28%;
+	font-size: 14px;
+	}
+	
+	.work{
+	margin-top: 50px;
+	padding-bottom: 0px;
+	}
+	
+	.client-photo{
+	height: 70px;
+	}
+	
+	.client-content--margin{
+	margin-top: 40px;
+	}
+	
+		
+	.contact-mesedge{
+		width: 53%;
+	}
+	
+	.contact-info{
+	width: 41%;
+	margin-right: 20px;
+	}
+	
+	.inform-title{
+	font-size: 18px;
+	}
+	
+	.inform-text{
+	font-size: 13px;
+	}
+	
+	 .header-inner--footer{
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+    .header-logo--footer{
+    margin-right: 0;
+    font-size: 30px;
+    }
+    
+    .nav-footer{
+    display: flex;
+    flex-wrap: wrap;
+   text-align: center;
+	width: 100%;
+    }
+    
+    .header-logo--footer{
+    margin-bottom: 30px;
+    }
+    
+    .nav-link--footer{
+    padding: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 1.1;
+	font-size: 20px;	
+    }
+	
+	.footer-icon{
+	font-size: 20px;
+	margin-right:15px;
+	}
+	
+	.footer-icon--gray{
+	font-size: 20px;
+	margin-right:15px;
+	}
+    
+    .footer-copiright{
+    font-size: 20px;
+    text-align: center;
+    }
+    
+	
+	
+}
+
+@media ( max-width:630px){
+.about-image{
+	margin-right: 20px;
+	}
+	
+    
+    .about-content{
+    margin-top: 10px;
+    }
+    
+    .about-title{
+    font-size: 22px;
+    }
+    
+    .about-text{
+    width: 100%;
+    margin-top: 5px;
+	font-size: 12px;
+    }
+    
+    .about-btn{
+	padding: 12px 25px;
+    margin: 10px 0;
+	font-size: 12px;
+    }
+	
+	.work-header-title{
+	padding-top: 45px;
+	}
+		
+	.work-content-head{
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+	}
+	
+	.work-content{
+	width: 200px;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;	
+	}
+	
+	.work-reverse{
+	justify-content: center;
+	flex-direction: row-reverse;
+	margin-top: 20px;
+	width: 100%;
+	height: 50%;
+	}
+	
+	.work-content-reverse{
+	width: 200px;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+	
+	.work-item{
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 30px;
+	height: 400px;
+	}
+	
+	.work-our-block{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	.work-our-image{
+	display: block;
+	max-width:100%;
+	height: auto;
+	margin-bottom: 30px;
+	}
+	.work-our-image--right{
+	display: block;
+	max-width:100%;
+	height: auto;
+	margin-bottom: 30px;
+	margin-right: 0;
+	}
+	
+	.reviev-item{
+width: 70%;
+margin-right: 50px;
+padding-left: 30px;
+}
+	
+.client-content{
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	.client-photo{
+	width: 40%;
+	height: 90px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	}
+	
+	.client-content--margin{
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 0;
+	}
+	
+	 .header-logo--footer{
+    font-size: 18px;
+    }
+    
+    .nav-link--footer{
+	font-size: 18px;	
+    }
+	
+	.footer-icon{
+	font-size: 18px;
+	margin-right:15px;
+	}
+	
+	.footer-icon--gray{
+	font-size: 18px;
+	margin-right:15px;
+	}
+    
+    .footer-copiright{
+    font-size: 18px;
+    }
+
+}
+
+@media ( max-width:525px){
+	.block-about{
+	margin-top: 50px;
+	}
+	
+ .about-inner{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    }
+    
+    .about-image{
+    margin: 0;
+    }
+    
+    .about-content{
+    margin-top: 20px;
+    padding: 0 15px;
+    text-align: center;
+    }
+    
+    .about-title{
+    font-size: 24px;
+    }
+    
+    .about-text{
+    width: 100%;
+    margin-top: 10px;
+    }
+    
+    .about-btn{
+    margin: 30px 0;    
+    }
+	
+	.work{
+	margin-top: 50px;
+	}
+	
+	.contact-content{
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	.contact-mesedge{
+	width: 85%;
+	}
+	
+	.contact-info{
+	margin-top: 20px;
+	margin-right: 0;
+	width: 85%;
+	}
+	
+    
+    .footer-copiright{
+    font-size: 14px;
+    }
+    	
+}
+@media ( max-width:470px){
+	.intro-title{
+	font-size: 40px;		
+	}
+	
+	 .header-inner{
+    justify-content: flex-start;
+	padding: 0;
+	flex-wrap: wrap; 
+    }
+    
+    .header-logo{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+	margin-bottom: 10px;
+    }
+	
+	.nav-border{
+	top: 20px;
+	right: 10px;
+	}
+	
+	.work-content-head{
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+	}
+	
+	.work-content{
+	width: 160px;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;	
+	}
+	
+	.work-reverse{
+	justify-content: center;
+	flex-direction: row-reverse;
+	margin-top: 20px;
+	width: 100%;
+	height: 50%;
+	}
+	
+	.work-content-reverse{
+	width: 160px;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+	
+	.work-item{
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 50px;
+	height: 350px;
+	}
+	
+	.client-photo{
+	height: 80px;
+	}
+	
+}
+
+	
 @media ( max-width:320px){
 
 	.header--fixed{
 	width: 320px;
+	height: 100px;
 	}
 	
     .header-inner{
-    flex-wrap: wrap;
+    justify-content: flex-start;
+	padding: 0;
     }
     
     .header-logo{
     font-size: 16px;
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
     }
+	
+	.nav-border{
+	top: 40px;
+	right: 10px;
+	}
     
     .phone-nummer{
     margin: 0;
@@ -837,7 +1385,6 @@ background-color: #4b496c;
     
     .about-image{
     margin: 0;
-    display: 
     }
     
     .about-content{
@@ -872,26 +1419,40 @@ background-color: #4b496c;
     line-height: 1.3;
     }
     
-    .work-item{
-    margin-top: 50px;
-    flex-wrap: wrap;
-    }
-    
-    .work-content{
-    height: 133px;
-    width: 46%;
-    margin: 0;
-    }
-    
-    .work-reverse{
-    width: 100%;
-    height: 133px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:-nowrap;
-    flex-direction:row-reverse;
-    margin-top: 20px;
-    }
+    .work-content-head{
+	justify-content: center;
+	width: 100%;
+	height: 48%;
+	}
+	
+	.work-content{
+	width: 160px;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;	
+	}
+	
+	.work-reverse{
+	justify-content: center;
+	flex-direction: row-reverse;
+	margin-top: 20px;
+	width: 100%;
+	height: 48%;
+	}
+	
+	.work-content-reverse{
+	width: 160px;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+	
+	.work-item{
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 50px;
+	height: 300px;
+	}
     
     .work-item-icon{
     left: 38%;
@@ -915,10 +1476,11 @@ background-color: #4b496c;
    
     .work-our-image{
     max-width: 100%;
-    width: 100%;
-    height: 50%;
-    margin-bottom: 20px;
     }
+	
+	.work-our-image--right{
+	max-width: 100%;
+	}
 	
 	.reviev{
 	padding: 0 15px 85px 15px; 
@@ -930,26 +1492,18 @@ background-color: #4b496c;
     }
     
     .client-title{
-    margin-bottom: 40px;
-    font-size: 24px;
-    }
-    
-    .client-content{
-    flex-wrap: wrap;
-
-    }
-    
-    .client-content--margin{
-        flex-wrap: wrap;
-       margin-top: 0;
-        padding-bottom: 50px;
-    }
-    
-    .client-photo{
-    width: 47%;
     margin-bottom: 20px;
-    margin-right: 0;
+    font-size: 24px;
+	padding-top: 30px;
     }
+	
+	.client-photo{
+	height: 65px;
+	}
+	
+	.client-content--margin{
+	padding-bottom: 30px;
+	}
     
     .contacts{
     padding: 0 15px;
