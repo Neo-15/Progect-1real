@@ -136,34 +136,55 @@ right: 35px;
 }
 
 .nav-togle{
-width: 20px; 
+width: 100%; 
+height: 100%;
 position: absolute;
 padding: 0 4px;
-top: 15px;
-right: 10px;
-z-index: 1;
+z-index: 100;
 display: none;
 border: 0;
-background:none; 
+background:none;
+top: 0;
+right: 0;
 }
 
-.nav-togle-item:before,
-.nav-togle-item:after{
-content: "";
-width: 100%;
+.nav-togle:focus{
+outline: none;
+}
+
+
+
+.nav-togle-item-top{
+top: 10px;
+display: block;
+width: 22px;
 height: 3px;
 background-color: #fff;
 position: absolute;
-left: 0;
+left: 25%;
 z-index: 1;
 }
 
-.nav-togle-item:before{
-top: -8px;
+.nav-togle-item-center{
+top: 18px;
+display: block;
+width: 22px;
+height: 3px;
+background-color: #fff;
+position: absolute;
+left: 25%;
+z-index: 1;
 }
 
-.nav-togle-item:after{
-bottom: -8px;
+.nav-togle-item-bottom{
+top: 26px;
+display: block;
+width: 22px;
+height: 3px;
+background-color: #fff;
+position: absolute;
+left: 25%;
+z-index: 1;
 }
 
 
@@ -178,6 +199,7 @@ bottom: 0;
 left: 0;
 right: 0;
 margin: auto;
+z-index: 1;
 }
 
 
@@ -547,8 +569,7 @@ margin-left: 10px;
 .client-image{
 display: block;
 max-width: 100%;
-height: auto;
-filter: grayscale(1);
+height: auto;   
 opacity: 0.3;
 }
 
@@ -588,7 +609,7 @@ padding-bottom: 30px;
 .field{
 width: 100%;
 border: 1px solid #a7a7a7;
-background-color: inherit;
+background-color: transparent;
 padding:15px 20px; 
 font-family: 'Lato', sans-serif;
 font-size: 14px;
@@ -610,7 +631,8 @@ color: #fff;
 .mesedge--field{
 width: 100%;
 border: 1px solid #a7a7a7;
-background-color: inherit;
+background-color: transparent;
+overflow: hidden;
 padding:15px 20px; 
 font-family: 'Lato', sans-serif;
 font-size: 14px;
